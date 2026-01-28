@@ -3,10 +3,9 @@
 
 ```{toctree}
 :hidden:
+:maxdepth: 2
 
-libs/index
-cultivate/index
-blog/index
+api/index
 ```
 
 # 索引和表格

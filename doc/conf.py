@@ -48,7 +48,7 @@ ROOT = get_project_root()  # 项目根目录绝对路径（用于派生 AutoAPI�
 try:
     # 优先从已安装的发行包元数据读取版本号（适用于已安装到环境的场景）
     from importlib.metadata import version as _pkg_version
-    release = _pkg_version("taolib")  # 文档显示的发行版本号（Sphinx 内置变量 release）
+    release = _pkg_version("Tenfinity")  # 文档显示的发行版本号（Sphinx 内置变量 release）
 except Exception:
     # 若未安装包（例如仅检出源码构建），则回退到环境变量或默认值
     release = os.environ.get("TAOLIB_VERSION", "0.0.0")  # 可通过 TAOLIB_VERSION 覆盖显示版本
@@ -144,7 +144,7 @@ elif _has('sphinx_book_theme'):
     html_theme = 'sphinx_book_theme'  # 次选 sphinx-book-theme（常用于书籍风格文档）
 else:
     html_theme = 'alabaster'  # 兜底主题：Sphinx 内置轻量主题
-html_title = "taolib"  # HTML 标题：显示在浏览器标签/页面顶部
+html_title = "Tenfinity"  # HTML 标题：显示在浏览器标签/页面顶部
 html_logo = "_static/images/logo.jpg"  # Logo 路径：相对 doc/，通常位于 _static/
 html_favicon = "_static/images/favicon.jpg"  # Favicon 路径：浏览器标签图标
 html_copy_source = True  # 是否提供“查看源文件”入口（便于溯源与调试）
@@ -166,7 +166,7 @@ thebe_config = {
 }
 
 # ================================= 版本切换器配置 =================================
-version_switcher_json_url = "https://taolib.readthedocs.io/zh-cn/latest/_static/switcher.json"  # 版本切换数据源（JSON）
+version_switcher_json_url = "https://Tenfinity.readthedocs.io/zh-cn/latest/_static/switcher.json"  # 版本切换数据源（JSON）
 
 # === 交叉引用配置 ===
 # 链接到其他项目的文档
@@ -230,7 +230,7 @@ except Exception:
 bibtex_bibfiles = ['refs.bib']  # BibTeX 数据文件列表：相对 doc/ 的路径
 
 # === AutoAPI Configuration ===
-autoapi_dirs = [str(ROOT / "src" / "taolib")]  # 扫描源码目录：用于提取 API 文档对象
+autoapi_dirs = [str(ROOT / "src" / "Tenfinity")]  # 扫描源码目录：用于提取 API 文档对象
 autoapi_root = "api"  # AutoAPI 输出根目录：生成的 rst/页面会放在该子目录下
 autoapi_generate_api_docs = True  # 是否自动生成 API 文档：False 表示仅配置而不自动生成
 

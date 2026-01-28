@@ -1,5 +1,5 @@
 [project]
-name = "taolib"
+name = "Tenfinity"
 version = "0.5.2"
 description = "道可道，非恒道"
 authors = [
@@ -14,8 +14,8 @@ maintainers = [
 dependencies = []
 
 [project.urls]
-Repository = "https://github.com/xinetzone/tao"
-Documentation = "https://taolib.readthedocs.io/"
+Repository = "https://github.com/RiseX10/Tenfinity"
+Documentation = "https://Tenfinity.readthedocs.io/"
 
 [project.optional-dependencies]
 doc = [
